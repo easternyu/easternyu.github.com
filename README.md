@@ -1,1 +1,1 @@
-# easternyu.github.com
+# Eastern's Blog
