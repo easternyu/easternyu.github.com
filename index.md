@@ -1,1 +1,0 @@
-# Eastern's Blog
