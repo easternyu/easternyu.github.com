@@ -1,1 +1,1 @@
-- [GlusterFS简单实用](glusterfs.md)
+- [GlusterFS简单使用](glusterfs.md)
