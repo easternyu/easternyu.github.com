@@ -1,4 +1,4 @@
-## GlusterFS存储集群(双节点)
+## GlusterFS简单使用
 
 ### 环境说明:
 ```
@@ -17,13 +17,20 @@ CentOS 7.7.1908
     # hostnamectl set-hostname nodeN.yu.com
     ```
 
-+ 写入hosts文件映射
++ 更改系统时区
+
+    ```bash
+    # timedatectl set-timezone Asia/Shanghai
+    ```
+
++ 更改hosts文件映射主机名
+    
     ```bash
     # vim /etc/hosts 
     192.168.186.219  node1.yu.com  node1
     192.168.186.220  node2.yu.com  node2
-    ```
-
+```
+    
 + 安装GlusterFS源
     ```bash
     # yum install centos-release-gluster6
@@ -98,7 +105,7 @@ CentOS 7.7.1908
     ```
 + 创建挂载点
     ```bash
-    mkdir -pv /data
+    # mkdir -pv /data
     ```
 + 挂载使用
     ```bash
