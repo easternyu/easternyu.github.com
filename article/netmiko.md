@@ -10,35 +10,37 @@
     [root@localhost script]# dnf install python3-pip -y
     [root@localhost script]# pip3 install netmiko
     ```
+    
 2. 下面是测试代码及执行结果:
     ```python
     #!/bin/bash python3
 #filename:router1.py
     from netmiko import ConnectHandler
     
-router1 = {
-        'device_type':'huawei',
-        'host':'192.168.107.12',
-        'username':'admin',
-        'password':'123456',
-    }
+    router1 = {
+            'device_type':'huawei',
+            'host':'192.168.107.12',
+            'username':'admin',
+            'password':'123456',
+        }
+        
+    router1Conn = ConnectHandler(**router1)
     
-router1Conn = ConnectHandler(**router1)
+    # 测试添加一个LoopBack口，并配置IP地址
     
-# 测试添加一个LoopBack口，并配置IP地址
-    config_command = ['int lo 0','ip add 2.2.2.2 32']
-    output = router1Conn.send_config_set(config_command)
-    print(output)
+        config_command = ['int lo 0','ip add 2.2.2.2 32']
+        output = router1Conn.send_config_set(config_command)
+        print(output)
     
-print("========================")//分割线
+    print("========================")
     
-# 验证一下结果
+    # 验证一下结果
     output = router1Conn.send_command("dis cu int lo 0")
     print(output)
-    
-router1Conn.disconnect()
+    router1Conn.disconnect()
     ```
-    执行结果：
+执行结果:
+    
     ```bash
     [root@localhost script]# python3 router1.py 
     system-view
@@ -55,5 +57,6 @@ router1Conn.disconnect()
     #
     return
     ```
+    
 
 > 脚本执行起来有点慢，不知道是不是因为路由器是ENSP模拟的原因
