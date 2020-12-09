@@ -1,2 +1,3 @@
 - [GlusterFS简单使用](article/glusterfs.md)
 - [Ceph简单使用](article/ceph.md)
+- [ELK的简单使用](article/elk.md)
