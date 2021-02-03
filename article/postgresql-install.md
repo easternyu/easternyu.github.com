@@ -57,7 +57,7 @@
 
 - 再次"configure"报错，提示没有zlib
 
-  ![without-zlib](https://github.com/easternyu/pictures/zlib/master/install-postgresql/8-zlib-dev-error.png)
+  ![without-zlib](https://github.com/easternyu/pictures/raw/master/install-postgresql/8-zlib-dev-error.png)
 
 - 安装zlib
 
@@ -65,7 +65,7 @@
   eastern@eastern-vm:~/Downloads/postgresql-13.1$ sudo apt install zlib1g-dev -y
   ```
 
-  ![install-zlib](https://github.com/easternyu/pictures/zlib/master/install-postgresql/9-install-zlib-dev.png)
+  ![install-zlib](https://github.com/easternyu/pictures/raw/master/install-postgresql/9-install-zlib-dev.png)
 
 - 再再次"configure"终于没有报错了!
 
