@@ -6,3 +6,4 @@
 - [使用netmiko自动保存华为设备配置脚本](article/netmiko2.md)
 - [使用netmiko自动保存华为设备配置到tftp服务器脚本](article/netmiko3.md)
 - [Oracle常用语句](article/oracle-script.md)
+- [postgresql源码安装](article/postgresql-install.md)
