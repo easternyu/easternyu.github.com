@@ -26,7 +26,7 @@
 
   ```bash
   eastern@eastern-vm:~/Downloads$ cd postgresql-13.1
-  eastern@eastern-vm:~/Downloads/postgresql-13.1$ ./confgure --prefix=/usr/local/pg131
+  eastern@eastern-vm:~/Downloads/postgresql-13.1$ ./configure --prefix=/usr/local/pg131
   ```
 
   ![configure](https://github.com/easternyu/pictures/raw/master/install-postgresql/3-configure.png)
